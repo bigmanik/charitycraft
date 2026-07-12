@@ -8,3 +8,204 @@
   --color-green:#008000;
   --font-body: "DM Sans", sans-serif;
 }
+ @keyframes pulse-dot {
+    0%, 100% { transform: translateX(-50%) scale(1); opacity: 1; }
+    50% { transform: translateX(-50%) scale(1.5); opacity: 0.5; }
+  }
+  
+  .timeline-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 0;
+    background: linear-gradient(to bottom, #0d9488, #14b8a6);
+    transform: translateX(-50%);
+    transition: height 1.5s ease-out;
+  }
+  
+  .timeline-line.active {
+    height: 100%;
+  }
+  
+  .dot {
+    position: absolute;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: #14b8a6;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.2);
+    transition: all 0.5s ease;
+  }
+  
+  .timeline-item.visible .dot {
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+  /* about page bottom  */
+    
+    
+     
+        
+        /* Base state for animated elements */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Active state when element enters viewport */
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Stagger delay utilities for sequential animations */
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+        .delay-500 { transition-delay: 500ms; }
+        .delay-600 { transition-delay: 600ms; }
+        .delay-700 { transition-delay: 700ms; }
+
+        /* Partner logo hover effect */
+        .partner-logo {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .partner-logo:hover {
+            opacity: 1 !important;
+            transform: translateY(-2px);
+        }
+
+        /* Button hover animations */
+        .btn-primary {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(30, 58, 66, 0.4);
+        }
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-secondary {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            border-color: #1e3a42;
+            color: #1e3a42;
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom color matching the screenshot */
+        .bg-cta {
+            background-color: #f0f7f0;
+        }
+        .text-teal-deep {
+            color: #1e3a42;
+        }
+        .bg-teal-deep {
+            background-color: #1e3a42;
+        }
+    
+
+/* ============================================
+   SCROLL REVEAL ANIMATIONS
+   
+   ============================================ */
+
+/* Base hidden state */
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Visible state (triggered by JS adding class) */
+[data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delay utilities (mirrors your card pattern) */
+[data-reveal-delay="100"] { transition-delay: 100ms; }
+[data-reveal-delay="200"] { transition-delay: 200ms; }
+[data-reveal-delay="300"] { transition-delay: 300ms; }
+[data-reveal-delay="400"] { transition-delay: 400ms; }
+[data-reveal-delay="500"] { transition-delay: 500ms; }
+[data-reveal-delay="600"] { transition-delay: 600ms; }
+[data-reveal-delay="700"] { transition-delay: 700ms; }
+
+/* Partner logo hover (from screenshot design) */
+.partner-logo {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.partner-logo:hover {
+    opacity: 1 !important;
+    transform: translateY(-2px);
+}
+
+/* Button hover animations */
+.btn-primary {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(30, 58, 66, 0.4);
+}
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.btn-secondary {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    border-color: #1e3a42;
+    color: #1e3a42;
+}
+
+/* whatsapp-button.css */
+.wa-pulse::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background-color: #25d366;
+  animation: wa-ripple 2s infinite;
+  z-index: -1;
+}
+
+@keyframes wa-ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}

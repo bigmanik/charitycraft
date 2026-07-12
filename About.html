@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our mission</title>
      <link rel="stylesheet" href="src/style.css">
+      <!-- <script src="https://unpkg.com/lucide@latest"></script> -->
 </head>
 <body class="bg-white font-body">
         <header class="sticky top-0 z-50 bg-white border-b border-gray-100">
@@ -26,14 +27,14 @@
                 <!-- Desktop nav links -->
                 <div class="hidden lg:flex items-center gap-8">
                     <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-ink transition-colors">Home</a>
-                    <a href="#volunteer" class="text-sm font-medium text-gray-600 hover:text-ink transition-colors">Volunteer</a>
-                    <a href="#news" class="text-sm font-medium text-gray-600 hover:text-ink transition-colors">News</a>
+                    <!-- <a href="#volunteer" class="text-sm font-medium text-gray-600 hover:text-ink transition-colors">Volunteer</a> -->
+                    <a href="https://edition.cnn.com/" class="text-sm font-medium text-gray-600 hover:text-ink transition-colors">News</a>
                 </div>
 
                 <!-- Desktop actions -->
                 <div class="hidden md:flex items-center gap-4">
                    
-                    <a href="#donate"
+                    <a href="donate.html"
                        class="inline-flex items-center rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-white hover:bg-black transition-colors">
                         Donate
                     </a>
@@ -60,12 +61,12 @@
         <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100">
             <div class="px-4 sm:px-6 py-4 flex flex-col gap-1">
                    <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-ink transition-colors">Home</a>
-                <a href="#volunteer" class="text-sm font-medium text-gray-600 hover:text-ink transition-colors py-2.5">Volunteer</a>
-                <a href="#news" class="text-sm font-medium text-gray-600 hover:text-ink transition-colors py-2.5">News</a>
+                <!-- <a href="#volunteer" class="text-sm font-medium text-gray-600 hover:text-ink transition-colors py-2.5">Volunteer</a> -->
+                <a href="https://edition.cnn.com/" class="text-sm font-medium text-gray-600 hover:text-ink transition-colors py-2.5">News</a>
 
                 <div class="flex flex-col gap-3 mt-3 pt-3 border-t border-gray-100">
                    
-                    <a href="#donate"
+                    <a href="donate.html"
                        class="inline-flex items-center justify-center rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-white hover:bg-black transition-colors">
                         Donate
                     </a>
@@ -151,6 +152,321 @@
 
   </div>
 </section>
+
+  <!-- Section header -->
+    <div class="text-center mb-21 ">
+      <p class="text-xs font-semibold tracking-[0.15em] text-teal-700 uppercase mb-3">
+        What we stand for
+      </p>
+      <h2 id="values-heading" class="text-4xl font-bold text-gray-900">
+        Our core values
+      </h2>
+    </div>
+ 
+    <!-- Values grid -->
+    <div id="values-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+ 
+      <!-- Justice -->
+      <article class="value-card rounded-2xl bg-white border border-gray-100 shadow-sm p-6 transition-shadow">
+        <div class="flex items-center justify-center w-11 h-11 rounded-xl bg-gray-100 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-gray-900" aria-hidden="true">
+            <path d="M12 3v18"/>
+            <path d="M6 7l-4 6a4 4 0 0 0 8 0z"/>
+            <path d="M18 7l-4 6a4 4 0 0 0 8 0z"/>
+            <path d="M6 7h12"/>
+            <path d="M12 3l-3 4h6z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2">Justice</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          We believe every person deserves equal representation and a fair shot at shaping the policies that govern their lives.
+        </p>
+      </article>
+ 
+      <!-- Community -->
+      <article class="value-card rounded-2xl bg-white border border-gray-100 shadow-sm p-6 transition-shadow">
+        <div class="flex items-center justify-center w-11 h-11 rounded-xl bg-slate-100 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-teal-700" aria-hidden="true">
+            <path d="M11 12H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h3"/>
+            <path d="M13 12h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-3"/>
+            <path d="M8 6l3 6-3 6"/>
+            <path d="M16 6l-3 6 3 6"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2">Community</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Real change starts at the local level. We invest deeply in neighborhoods and empower people to lead their own futures.
+        </p>
+      </article>
+ 
+      <!-- Transparency -->
+      <article class="value-card rounded-2xl bg-white border border-gray-100 shadow-sm p-6 transition-shadow">
+        <div class="flex items-center justify-center w-11 h-11 rounded-xl bg-emerald-50 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-teal-700" aria-hidden="true">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2">Transparency</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          We publish detailed reports on how every dollar is spent and make our governance processes fully accessible to the public.
+        </p>
+      </article>
+ 
+      <!-- Action -->
+      <article class="value-card rounded-2xl bg-white border border-gray-100 shadow-sm p-6 transition-shadow">
+        <div class="flex items-center justify-center w-11 h-11 rounded-xl bg-gray-100 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-900" aria-hidden="true">
+            <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2">Action</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          We don't just advocate — we organize, mobilize, and act. Urgency and accountability guide everything we do.
+        </p>
+      </article>
+ 
+    </div>
+  </section>
+
+
+<section class="leadership" id="leadership">
+  <div class="mx-auto max-w-6xl px-6 py-20 sm:py-24">
+
+    <!-- Header row -->
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between mb-14">
+      <div>
+        <p class="text-sm font-semibold tracking-widest text-teal-600 uppercase mb-3">
+          The people behind it
+        </p>
+        <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900">
+          Meet our leadership
+        </h2>
+      </div>
+
+      <a
+        href="/about/board.html"
+        class="group inline-flex items-center gap-1.5 text-sm font-medium text-slate-900 underline underline-offset-4 decoration-slate-300 hover:decoration-slate-900 transition-colors self-start sm:self-end"
+      >
+        View full board
+        <span class="inline-block transition-transform group-hover:translate-x-1" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+
+      <article>
+        <div class="mb-5 overflow-hidden rounded-2xl bg-slate-100 aspect-[4/5]">
+          <img
+            src="src/assets/download (2).jpg"
+            alt="Dr. Andrew Rhodes"
+            loading="lazy"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <h3 class="text-lg font-bold text-slate-900">Dr. Angela Rhodes</h3>
+        <p class="text-sm font-medium text-teal-600 mb-2">Executive Director</p>
+        <p class="text-sm leading-relaxed text-slate-500">
+          Former civil rights attorney with 20+ years of political advocacy experience across the South.
+        </p>
+      </article>
+
+      <article>
+        <div class="mb-5 overflow-hidden rounded-2xl bg-slate-100 aspect-[4/5]">
+          <img
+            src="src/assets/download (3).jpg"
+            alt="Marcus T. Ellison"
+            loading="lazy"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <h3 class="text-lg font-bold text-slate-900">Marcus T. Ellison</h3>
+        <p class="text-sm font-medium text-teal-600 mb-2">Director of Campaigns</p>
+        <p class="text-sm leading-relaxed text-slate-500">
+          Strategist behind three landmark voter registration drives, reaching over 400,000 new voters.
+        </p>
+      </article>
+
+      <article>
+        <div class="mb-5 overflow-hidden rounded-2xl bg-slate-100 aspect-[4/5]">
+          <img
+            src="src/assets/download (4).jpg"
+            alt="Priya Nair"
+            loading="lazy"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <h3 class="text-lg font-bold text-slate-900">Priya Nair</h3>
+        <p class="text-sm font-medium text-teal-600 mb-2">Head of Community Outreach</p>
+        <p class="text-sm leading-relaxed text-slate-500">
+          Community builder and public policy expert specializing in immigrant voter advocacy.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-slate-800 min-h-screen py-20 px-4">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold text-white text-center mb-16">Key milestones</h2>
+    
+    <div class="relative" id="timeline">
+      <!-- Vertical Line -->
+      <div class="timeline-line" id="timelineLine"></div>
+      
+      <!-- 2015 -->
+      <div class="timeline-item flex flex-col md:flex-row items-center mb-16 relative">
+        <div class="md:w-1/2 md:pr-12 md:text-right text-center mb-4 md:mb-0">
+          <span class="text-teal-500 text-sm font-medium tracking-wider">2015</span>
+          <h3 class="text-2xl font-bold text-white mt-1">Founded in Atlanta</h3>
+          <p class="text-slate-400 mt-2 leading-relaxed">
+            A coalition of 12 organizers launched Charitycraft with a $50K seed grant to expand voter access in Georgia.
+          </p>
+        </div>
+        <div class="dot top-6"></div>
+        <div class="md:w-1/2 md:pl-12"></div>
+      </div>
+      
+      <!-- 2017 -->
+      <div class="timeline-item flex flex-col md:flex-row items-center mb-16 relative">
+        <div class="md:w-1/2 md:pr-12"></div>
+        <div class="dot top-6"></div>
+        <div class="md:w-1/2 md:pl-12 text-center md:text-left mb-4 md:mb-0">
+          <span class="text-teal-500 text-sm font-medium tracking-wider">2017</span>
+          <h3 class="text-2xl font-bold text-white mt-1">Expanded to 10 States</h3>
+          <p class="text-slate-400 mt-2 leading-relaxed">
+            Secured a landmark partnership with the ACLU and registered over 80,000 voters ahead of midterms.
+          </p>
+        </div>
+      </div>
+      
+      <!-- 2020 -->
+      <div class="timeline-item flex flex-col md:flex-row items-center mb-16 relative">
+        <div class="md:w-1/2 md:pr-12 md:text-right text-center mb-4 md:mb-0">
+          <span class="text-teal-500 text-sm font-medium tracking-wider">2020</span>
+          <h3 class="text-2xl font-bold text-white mt-1">Election Mobilization Drive</h3>
+          <p class="text-slate-400 mt-2 leading-relaxed">
+            Deployed 40,000 volunteers across 18 swing states, contributing to record-breaking turnout in the presidential election.
+          </p>
+        </div>
+        <div class="dot top-6"></div>
+        <div class="md:w-1/2 md:pl-12"></div>
+      </div>
+      
+      <!-- 2023 -->
+      <div class="timeline-item flex flex-col md:flex-row items-center relative">
+        <div class="md:w-1/2 md:pr-12"></div>
+        <div class="dot top-6"></div>
+        <div class="md:w-1/2 md:pl-12 text-center md:text-left mb-4 md:mb-0">
+          <span class="text-teal-500 text-sm font-medium tracking-wider">2023</span>
+          <h3 class="text-2xl font-bold text-white mt-1">$4.2M Raised & 120K Volunteers</h3>
+          <p class="text-slate-400 mt-2 leading-relaxed">
+            Reached a historic funding milestone and expanded volunteer infrastructure to all 28 active states.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Label -->
+            <div class="text-center mb-12 animate-on-scroll">
+                <p class="text-xs font-semibold tracking-[0.2em] text-gray-400 uppercase">
+                    Trusted Partners & Supporters
+                </p>
+            </div>
+
+            <!-- Partner Logos Grid -->
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
+                
+                <!-- Democracy Now -->
+                <div class="partner-logo animate-on-scroll delay-100 opacity-60 flex items-center gap-2 text-gray-500">
+                    <i data-lucide="landmark" class="w-5 h-5"></i>
+                    <span class="font-medium text-sm md:text-base">Democracy Now</span>
+                </div>
+
+                <!-- Civic Forward -->
+                <div class="partner-logo animate-on-scroll delay-200 opacity-60 flex items-center gap-2 text-gray-500">
+                    <i data-lucide="users" class="w-5 h-5"></i>
+                    <span class="font-medium text-sm md:text-base">Civic Forward</span>
+                </div>
+
+                <!-- VoteAmerica -->
+                <div class="partner-logo animate-on-scroll delay-300 opacity-60 flex items-center gap-2 text-gray-500">
+                    <i data-lucide="globe" class="w-5 h-5"></i>
+                    <span class="font-medium text-sm md:text-base">VoteAmerica</span>
+                </div>
+
+                <!-- GreenPolicy Fund -->
+                <div class="partner-logo animate-on-scroll delay-400 opacity-60 flex items-center gap-2 text-gray-500">
+                    <i data-lucide="leaf" class="w-5 h-5"></i>
+                    <span class="font-medium text-sm md:text-base">GreenPolicy Fund</span>
+                </div>
+
+                <!-- Rights Coalition -->
+                <div class="partner-logo animate-on-scroll delay-500 opacity-60 flex items-center gap-2 text-gray-500">
+                    <i data-lucide="hand" class="w-5 h-5"></i>
+                    <span class="font-medium text-sm md:text-base">Rights Coalition</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CTA SECTION
+         ============================================ -->
+  <section class="py-20 md:py-32 bg-cta">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <!-- Label -->
+        <div class="animate-on-scroll delay-100 mb-6">
+            <p class="text-xs font-semibold tracking-[0.2em] text-teal-deep uppercase">
+                Get Involved
+            </p>
+        </div>
+
+        <!-- Heading -->
+        <div class="animate-on-scroll delay-200 mb-6">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                Ready to be part of the movement?
+            </h2>
+        </div>
+
+        <!-- Description -->
+        <div class="animate-on-scroll delay-300 mb-10 max-w-2xl mx-auto">
+            <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+                Whether you volunteer your time, make a donation, or simply spread the word — every action counts. Join over 120,000 people already making a difference.
+            </p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="animate-on-scroll delay-400 flex flex-col sm:flex-row justify-center items-center gap-4">
+            
+            <button class="btn-primary bg-teal-deep text-white px-8 py-4 rounded-xl font-semibold text-sm md:text-base flex items-center gap-2 min-w-[200px] justify-center">
+                <i data-lucide="heart" class="w-4 h-4"></i>
+             <a href="donate.html">Donate Now</a>   
+            </button>
+
+          
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
 <footer class="bg-slate-800 px-6 py-16">
   <div class="mx-auto max-w-7xl flex flex-col lg:flex-row lg:items-start justify-between gap-12">
 
@@ -185,7 +501,10 @@
     </div>
 
   </div>
+
+  
 </footer>
-    
+
+    <script src="src/main.js"></script>
 </body>
 </html>
