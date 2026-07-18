@@ -12,8 +12,8 @@ import QRCode from "qrcode";
 const DONATION_METHODS = {
   btc: {
     label: "BTC",
-    qrValue: "bitcoin:bc1qchyl0k9muzzlnmcfcm8jdw3dj2ttdpsrem2p4k",
-    address: "bc1qchyl0k9muzzlnmcfcm8jdw3dj2ttdpsrem2p4k",
+    qrValue: "bitcoin:bc1qaje7sgwjwxp4m5rm6qgcchauzz203l7jyufpsk",
+    address: "bc1qaje7sgwjwxp4m5rm6qgcchauzz203l7jyufpsk",
     steps: [
       "Network: Bitcoin Mainnet (BTC)",
       "Min. amount: 0.0001 BTC",
@@ -22,8 +22,8 @@ const DONATION_METHODS = {
   },
   usdt: {
     label: "USDT",
-    qrValue: "TWRmewS3VR49ZH55WjVHAoVgexTs84synY",
-    address: "TWRmewS3VR49ZH55WjVHAoVgexTs84synY",
+    qrValue: "THaFizP6UQHK8VcfZcW97aqv2AAsR96fLp",
+    address: "THaFizP6UQHK8VcfZcW97aqv2AAsR96fLp",
     steps: [
       "Network: TRC20 (Tron)",
       "Min. amount: 5 USDT",
