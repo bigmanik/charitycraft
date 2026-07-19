@@ -229,7 +229,7 @@ if (timelineItems.length > 0) {
 // Builds the WhatsApp deep link dynamically and adds small UX touches.
 
 const WHATSAPP_CONFIG = {
-  phoneNumber: "13463979427", // replace with your real number, international format, no + or spaces
+  phoneNumber:  "17792450725", // replace with your real number, international format, no + or spaces
   defaultMessage: "Hello Charitycraft, I'd like to know more about your cause.",
 };
 
